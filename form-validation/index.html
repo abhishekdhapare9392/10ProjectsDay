@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validations</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="formContainer">
+        <form>
+          <h3 class="form-heading">Form validations</h3>
+          <span class="error-msg"></span>
+          <div class="form-group">
+            <div class="input-group">
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                class="form-control mb-3"
+                placeholder="First Name*"
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="text"
+                name="lastname"
+                id="lasename"
+                class="form-control mb-3"
+                placeholder="Last Name*"
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                class="form-control mb-3"
+                placeholder="Email"
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="text"
+                name="message"
+                id="message"
+                class="form-control mb-3"
+                placeholder="Message"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Send"
+              class="btn btn-primary rounded-0 border-0 shadow mt-2 btn-block"
+              id="submit"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
