@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.note-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #512da8;
+  color: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+}
+
+.card-header {
+  padding: 10px 15px;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  background-color: #331c66;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-content {
+  padding: 10px 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.note-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background-color: #5d3cac;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.brand-name h2 {
+  color: white;
+}
+
+.inputSearch {
+  padding: 10px;
+  background: transparent;
+  border: 0.5px solid #ffd13b;
+  border-radius: 25px;
+}
+
+#close {
+  cursor: pointer;
+}

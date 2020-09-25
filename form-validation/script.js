@@ -40,6 +40,14 @@ submitBtn.addEventListener('click', (e) => {
   e.preventDefault();
 });
 
+
+firstName.addEventListener('keyup', (e)=>{
+  var firstNameCode = e.target.value;
+  // var charcode = firstName.charCodeAt(index)
+  console.log(firstNameCode.fromCharCode(65, 90));
+  // console.log(charcode);
+})
+
 // Show alert function for alerts
 
 const showAlert = (msg, className) => {
