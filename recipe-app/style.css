@@ -1,0 +1,100 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.app-container {
+  width: 500px;
+  height: 100vh;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  overflow-y: scroll;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  padding: 25px 15px;
+}
+
+ul::-webkit-scrollbar,
+.app-container::-webkit-scrollbar {
+  width: 1em;
+}
+
+ul::-webkit-scrollbar-track,
+.app-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0);
+}
+
+ul::-webkit-scrollbar-thumb,
+.app-container::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 10px;
+}
+
+ul li {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+ul li img {
+  width: 125px;
+  height: 125px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.search {
+  cursor: pointer;
+}
+
+#search {
+  display: none;
+  padding: 10px 10px;
+  width: 400px;
+  border: none;
+  border-bottom: 2px solid #333;
+}
+
+#search:focus {
+  outline: none;
+}
+
+.card {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  margin: 25px;
+  cursor: pointer;
+}
+.card-body {
+  padding: 25px 25px;
+}
