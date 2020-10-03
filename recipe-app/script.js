@@ -43,14 +43,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 document.querySelector('.search').addEventListener('click', () => {
   if (
-    document.querySelector('#search').style.display == 'none' &&
-    document.querySelector('#title').style.display == 'block'
+    document.querySelector('#search').style.display == 'block' &&
+    document.querySelector('#title').style.display == 'none'
   ) {
-    document.querySelector('#search').style.display = 'block';
-    document.querySelector('#title').style.display = 'none';
-  } else {
     document.querySelector('#search').style.display = 'none';
     document.querySelector('#title').style.display = 'block';
+  } else {
+    document.querySelector('#search').style.display = 'block';
+    document.querySelector('#title').style.display = 'none';
   }
 });
 
